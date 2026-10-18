@@ -1,18 +1,46 @@
-# Salesforce DX Project: Next Steps
+# 🌦️ Salesforce Weather Dashboard
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+A weather information application built using Salesforce Lightning Web Components (LWC), Apex, and the OpenWeather API. It allows users to search for a city and view its current weather information directly in Salesforce.
 
-## How Do You Plan to Deploy Your Changes?
+## 🚀 Features
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+- Search weather information by city name
+- Display current temperature and feels-like temperature
+- Show humidity and atmospheric pressure
+- Display minimum and maximum temperatures
+- Responsive dashboard interface
+- Retrieve weather data through Apex HTTP callouts
+- Built using Salesforce Lightning Web Components
 
-## Configure Your Salesforce DX Project
+## 🛠️ Technologies Used
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+- Salesforce Platform
+- Apex
+- Lightning Web Components (LWC)
+- JavaScript
+- HTML and CSS
+- OpenWeather API
+- Salesforce Remote Site Settings
 
-## Read All About It
+## 🏗️ Project Structure
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+```text
+Salesforce-Weather-Dashboard/
+├── config/
+├── force-app/
+│   └── main/
+│       └── default/
+│           ├── classes/
+│           │   ├── WeatherDetailsClass.cls
+│           │   └── WeatherDetailsClass.cls-meta.xml
+│           └── lwc/
+│               └── weatherScreen/
+│                   ├── weatherScreen.html
+│                   ├── weatherScreen.js
+│                   ├── weatherScreen.css
+│                   └── weatherScreen.js-meta.xml
+├── manifest/
+├── scripts/
+├── README.md
+├── package.json
+└── sfdx-project.json
